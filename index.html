@@ -25,11 +25,13 @@
                 <span></span>
             </div>
             <div class="screen">
-                <h2 id="name">Pokémon</h2>
-                <img src="resources/questionmark.jpg" id="img-poke" alt="image pokémon"><br>
+                <img id="img-poke" alt="image pokémon"><br>
+
             </div>
+
             <div class="status">
                 <div class="status-light"></div>
+                <h2 id="name">Pokémon</h2>
                 <div class="status-sound">
                     <span></span>
                     <span></span>
@@ -41,7 +43,6 @@
         <div class="pokeindex-left__buttons">
             <div class="buttons">
                 <div class="buttons-circle">
-                    <button type="button" class="fill" id="run">Submit</button>
                 </div>
                 <div class="buttons-quad">
                     <span></span>
@@ -53,21 +54,13 @@
                 <div class="controller-joystick"></div>
             </div>
         </div>
-        <form action="getPokemon()" method="get">
-        <input type="text" id="input" placeholder="Type in a name or random number to generate a Pokémon..."><br>
-        </form>
     </div>
     <div class="pokeindex-middle"></div>
     <div class="pokeindex-right">
         <div class="pokeindex-right__screen">
-
-            <h2>Previous evolution</h2><br>
-            <p id="evolution"></p><br>
-            <img src="resources/questionmark.jpg" id="img-evolution" alt="image evolution"><br>
-            <h2>Abilities</h2><br>
-            <p id="abilities"></p><br>
-            <h2>Moves</h2><br>
-            <p id="moves"></p><br>
+            <form action="getPokemon()" method="get">
+                <input type="text" id="input" placeholder="Type in a name or random number to generate a Pokémon..."><br>
+            </form>
         </div>
         <div class="pokeindex-right__buttons">
             <span></span>
@@ -99,7 +92,7 @@
             <div class="light"></div>
         </div>
         <div class="pokeindex-right__buttons-double">
-            <span></span>
+            <span><button type="button" class="fill" id="run">Submit</button></span>
             <span></span>
         </div>
     </div>

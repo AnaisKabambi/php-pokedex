@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>
+    <?php
+        $hello = "hello";
+        echo $hello;
+    ?>
+
+</h1>
+<div class="pokeindex">
+    <div class="pokeindex-left">
+        <div class="pokeindex-left__top">
+            <div class="circle-big"></div>
+            <div class="circle-small"></div>
+        </div>
+        <div class="pokeindex-left__screen">
+            <div class="dots">
+                <span></span>
+                <span></span>
+            </div>
+            <div class="screen">
+                <h2 id="name">Pokémon</h2>
+                <img src="resources/questionmark.jpg" id="img-poke" alt="image pokémon"><br>
+            </div>
+            <div class="status">
+                <div class="status-light"></div>
+                <div class="status-sound">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <div class="pokeindex-left__buttons">
+            <div class="buttons">
+                <div class="buttons-circle">
+                    <button type="button" class="fill" id="run">Submit</button>
+                </div>
+                <div class="buttons-quad">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="controller">
+                <div class="controller-touch"> <p><span id="id"></span> </p></div>
+                <div class="controller-joystick"></div>
+            </div>
+        </div>
+        <form action="getPokemon()" method="get">
+        <input type="text" id="input" placeholder="Type in a name or random number to generate a Pokémon..."><br>
+        </form>
+    </div>
+    <div class="pokeindex-middle"></div>
+    <div class="pokeindex-right">
+        <div class="pokeindex-right__screen">
+
+            <h2>Previous evolution</h2><br>
+            <p id="evolution"></p><br>
+            <img src="resources/questionmark.jpg" id="img-evolution" alt="image evolution"><br>
+            <h2>Abilities</h2><br>
+            <p id="abilities"></p><br>
+            <h2>Moves</h2><br>
+            <p id="moves"></p><br>
+        </div>
+        <div class="pokeindex-right__buttons">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="pokeindex-right__buttons-quadruple">
+            <div class="dot">
+                <span></span>
+                <span></span>
+            </div>
+            <div class="button">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="pokeindex-right__buttons-triple">
+            <div class="button">
+                <span></span>
+                <span></span>
+            </div>
+            <div class="light"></div>
+        </div>
+        <div class="pokeindex-right__buttons-double">
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</div>
+</body>
+</html>
